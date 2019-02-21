@@ -47,18 +47,11 @@ public class PlayerTest {
 
         player1.setPlayTime(100000);
         player2.setPlayTime(200000);
-        player3.setPlayTime(300000);
+        player3.setPlayTime(200000);
 
-        List<Player> playerList = new ArrayList<Player>();
-        playerList.add(player3);
-        playerList.add(player2);
-        playerList.add(player1);
-
-        Collections.sort(playerList);
-
-        assertTrue(playerList.get(0).getPlayerName().equals(player1.getPlayerName()));
-        assertTrue(playerList.get(1).getPlayerName().equals(player2.getPlayerName()));
-        assertTrue(playerList.get(2).getPlayerName().equals(player3.getPlayerName()));
+        assertTrue(player1.compareTo(player2) == -1);
+        assertTrue(player2.compareTo(player3) == 0);
+        assertTrue(player3.compareTo(player1) == 1);
     }
 
     @Test
