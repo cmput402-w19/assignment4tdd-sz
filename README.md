@@ -6,3 +6,4 @@
 # References
 
 * [http://tutorials.jenkov.com/java-date-time/system-currenttimemillis.html](http://tutorials.jenkov.com/java-date-time/system-currenttimemillis.html)
+* [https://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/](https://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/)

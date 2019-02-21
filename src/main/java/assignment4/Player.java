@@ -1,6 +1,6 @@
 package assignment4;
 
-public class Player {
+public class Player implements Comparable<Player> {
     private String playerName;
     private long playTime;
 
@@ -19,5 +19,26 @@ public class Player {
 
     public long getPlayTime() {
         return playTime;
+    }
+
+    @Override
+    public int compareTo(Player comparePlayer) {
+        long comparePlayerTime = comparePlayer.getPlayTime();
+        long compareResult = playTime - comparePlayerTime;
+        if (compareResult > 0) {
+            return 1;
+        }
+        else if (compareResult < 0) {
+            return -1;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    @Override
+    public String toString() {
+        long playTimeInSec = playTime / 1000;
+        return playerName + "\t\t" + "[" + playTimeInSec + "]";
     }
 }
