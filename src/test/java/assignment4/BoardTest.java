@@ -144,4 +144,12 @@ public class BoardTest {
         assertTrue(printOutput.contains("|4|5|6|"));
         assertTrue(printOutput.contains("|7|8|9|"));
     }
+
+    @Test
+    public void TestIsNumberIsUsed() {
+        Board mockBoard = new Board();
+        mockBoard.makeAMove(1, 1, 5);
+        assertTrue(mockBoard.isNumberIsUsed(5));
+        assertTrue(!mockBoard.isNumberIsUsed(6));
+    }
 }
