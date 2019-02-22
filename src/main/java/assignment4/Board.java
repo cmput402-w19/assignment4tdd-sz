@@ -75,4 +75,15 @@ public class Board {
 
         }
     }
+
+    public boolean isNumberIsUsed(int number) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (gameBoard[i][j] == number) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
