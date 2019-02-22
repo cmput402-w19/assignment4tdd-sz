@@ -21,6 +21,11 @@ public class Player implements Comparable<Player> {
         return playTime;
     }
 
+    public void reset(String newPlayerName) {
+        playerName = newPlayerName;
+        playTime = 0;
+    }
+
     @Override
     public int compareTo(Player comparePlayer) {
         long comparePlayerTime = comparePlayer.getPlayTime();
