@@ -152,4 +152,25 @@ public class BoardTest {
         assertTrue(mockBoard.isNumberIsUsed(5));
         assertTrue(!mockBoard.isNumberIsUsed(6));
     }
+
+    @Test
+    public void TestClear() {
+        Board mockBoard = new Board();
+        int number = 1;
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                mockBoard.makeAMove(row, col, number);
+                number++;
+            }
+        }
+        assertTrue(mockBoard.isFull());
+
+        mockBoard.clear();
+
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                assertTrue(mockBoard.getBoard()[row][col] == 0);
+            }
+        }
+    }
 }
