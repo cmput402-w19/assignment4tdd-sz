@@ -5,26 +5,26 @@ import java.util.Collections;
 import java.util.List;
 
 public class ScoreBoard {
-    private List<Player> players;
+    private List<Player> playerList;
 
     public ScoreBoard(){
-        players = new ArrayList<Player>();
+        playerList = new ArrayList<Player>();
     }
 
-    public List<Player> getPlayers() {
-        return players;
+    public List<Player> getPlayerList() {
+        return playerList;
     }
 
     public void addPlayer(Player player){
-        players.add(player);
+        playerList.add(player);
     }
 
     public void printScoreBoard(){
-        Collections.sort(players);
-        System.out.println("----------");
-        for(Player player : players){
+        Collections.sort(playerList);
+        System.out.println("============Score Board============");
+        for(Player player : playerList){
             System.out.println(player.toString());
         }
-        System.out.println("----------");
+        System.out.println("===================================");
     }
 }

@@ -4,12 +4,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.boot.test.rule.OutputCapture;
 
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import static org.hamcrest.core.StringStartsWith.startsWith;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -21,7 +18,7 @@ public class ScoreBoardTest {
     public void TestScoreBoardConstructor()
     {
         ScoreBoard scoreBoard = new ScoreBoard();
-        assertTrue(scoreBoard.getPlayers().size()==0);
+        assertTrue(scoreBoard.getPlayerList().size()==0);
     }
 
     @Test
@@ -36,7 +33,7 @@ public class ScoreBoardTest {
         List<Player> players = new ArrayList<Player>();
         players.add(player1);
         players.add(player2);
-        assertTrue(scoreBoard.getPlayers().equals(players));
+        assertTrue(scoreBoard.getPlayerList().equals(players));
     }
 
     @Rule
@@ -55,12 +52,11 @@ public class ScoreBoardTest {
         scoreBoard.printScoreBoard();
         
         String printOutput = outputCapture.toString();
-        assertTrue(printOutput.contains("----------"));
+        assertTrue(printOutput.contains("============Score Board============"));
         assertTrue(printOutput.contains("player1\t\t[0]"));
         assertTrue(printOutput.contains("player2\t\t[0]"));
+        assertTrue(printOutput.contains("==================================="));
 
-
-        verify(mockCollections).sort(scoreBoard.getPlayers());
-
+        verify(mockCollections).sort(scoreBoard.getPlayerList());
     }
 }
