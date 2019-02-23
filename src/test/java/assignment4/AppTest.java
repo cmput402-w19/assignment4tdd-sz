@@ -33,7 +33,7 @@ public class AppTest
         doNothing().when(mockGame).play();
 
         inputStream.provideLines("MockPlayerName", "n");
-        App.main();
+        App.main(new String[] {""});
     }
 
     @Test
