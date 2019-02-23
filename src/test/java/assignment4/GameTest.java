@@ -94,7 +94,7 @@ public class GameTest {
     public void TestPlayDeleteAndMakeAMoveAndFull() {
         Game mockGame = mock(Game.class);
 
-        when(mockGame.enterAddOrDelete()).thenReturn("a").thenReturn("a").thenReturn("d").thenReturn("d").thenReturn("a").thenReturn("a");
+        when(mockGame.enterAddOrDelete()).thenReturn("a").thenReturn("a").thenReturn("a").thenReturn("d").thenReturn("a").thenReturn("a");
         when(mockGame.enterRowOrCol("row")).thenReturn(0).thenReturn(0).thenReturn(0).thenReturn(0).thenReturn(0).thenReturn(0);
         when(mockGame.enterRowOrCol("column")).thenReturn(0).thenReturn(1).thenReturn(0).thenReturn(1).thenReturn(0).thenReturn(1);
         when(mockGame.enterNumber()).thenReturn(1).thenReturn(8).thenReturn(8).thenReturn(1);

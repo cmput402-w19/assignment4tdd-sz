@@ -27,7 +27,7 @@ public class Game {
 
             board.printBoard();
 
-            if (enterAddOrDelete().equals("a")) {
+            if (enterAddOrDelete().equals("a") && !board.isFull()) {
                 boolean cellIsOccupied = true;
                 int row = 0;
                 int col = 0;
@@ -45,6 +45,8 @@ public class Game {
                 board.makeAMove(row, col, number);
             }
             else {
+                System.out.println("Please delete a cell:");
+
                 int row = enterRowOrCol("row");
                 int col = enterRowOrCol("column");
 
