@@ -2,6 +2,8 @@
 [![Build Status](https://travis-ci.com/cmput402-w19/assignment4tdd-sz.svg?token=FssyMmBPRuAzV51Y1wPf&branch=master)](https://travis-ci.com/cmput402-w19/assignment4tdd-sz)
 [![codecov](https://codecov.io/gh/cmput402-w19/assignment4tdd-sz/branch/master/graph/badge.svg)](https://codecov.io/gh/cmput402-w19/assignment4tdd-sz)
 
+# How to play
+Please see [http://www.dr-mikes-math-games-for-kids.com/3x3-magic-square.html](http://www.dr-mikes-math-games-for-kids.com/3x3-magic-square.html)
 
 # References
 
