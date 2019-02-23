@@ -52,8 +52,8 @@ public class ScoreBoardTest {
         
         String printOutput = outputCapture.toString();
         assertTrue(printOutput.contains("============Score Board============"));
-        assertTrue(printOutput.contains("player1\t\t[0]"));
-        assertTrue(printOutput.contains("player2\t\t[0]"));
+        assertTrue(printOutput.contains("player1\t\t[0] sec"));
+        assertTrue(printOutput.contains("player2\t\t[0] sec"));
         assertTrue(printOutput.contains("==================================="));
     }
 }

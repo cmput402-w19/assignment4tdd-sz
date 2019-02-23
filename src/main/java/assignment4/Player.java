@@ -39,6 +39,6 @@ public class Player implements Comparable<Player> {
     @Override
     public String toString() {
         long playTimeInSec = playTime / 1000;
-        return playerName + "\t\t" + "[" + playTimeInSec + "]";
+        return playerName + "\t\t" + "[" + playTimeInSec + "] sec";
     }
 }
