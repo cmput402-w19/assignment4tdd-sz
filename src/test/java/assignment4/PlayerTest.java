@@ -59,12 +59,12 @@ public class PlayerTest {
     {
         Player player = new Player(playerName);
         long expectedPlayTimeInSec = 0;
-        String expectedResult = playerName + "\t\t" + "[" + expectedPlayTimeInSec + "]";
+        String expectedResult = playerName + "\t\t" + "[" + expectedPlayTimeInSec + "] sec";
         assertTrue(player.toString().equals(expectedResult));
 
         player.setPlayTime(playTime);
         expectedPlayTimeInSec = playTime / 1000;
-        expectedResult = playerName + "\t\t" + "[" + expectedPlayTimeInSec + "]";
+        expectedResult = playerName + "\t\t" + "[" + expectedPlayTimeInSec + "] sec";
         assertTrue(player.toString().equals(expectedResult));
     }
 }
