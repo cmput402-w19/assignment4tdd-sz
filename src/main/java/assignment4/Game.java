@@ -95,7 +95,7 @@ public class Game {
         return Integer.valueOf(input);
     }
 
-        public int enterNumber() {
+    public int enterNumber() {
         String input = "";
 
         List<String> validInput = new ArrayList<String>();
@@ -113,7 +113,7 @@ public class Game {
             System.out.println("Please enter a number(1~9):");
             input = scanner.nextLine();
 
-            if (!input.equals("") && !input.equals("0") && board.isNumberIsUsed(Integer.valueOf(input))) {
+            if (validInput.contains(input) && board.isNumberIsUsed(Integer.valueOf(input))) {
                 System.out.println("This number has been used!");
                 input = "";
             }
