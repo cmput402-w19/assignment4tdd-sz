@@ -67,15 +67,4 @@ public class PlayerTest {
         expectedResult = playerName + "\t\t" + "[" + expectedPlayTimeInSec + "]";
         assertTrue(player.toString().equals(expectedResult));
     }
-
-    @Test
-    public void TestReset() {
-        Player player = new Player(playerName);
-        player.setPlayTime(playTime);
-
-        player.reset("newPlayerName");
-
-        assertTrue(player.getPlayerName().equals("newPlayerName"));
-        assertTrue(player.getPlayTime() == 0);
-    }
 }
