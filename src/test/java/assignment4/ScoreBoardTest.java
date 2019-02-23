@@ -42,7 +42,6 @@ public class ScoreBoardTest {
     @Test
     public void TestPrintScoreBoard()
     {
-        Collections mockCollections = mock(Collections.class);
         ScoreBoard scoreBoard = new ScoreBoard();
         Player player1 = new Player("player1");
         Player player2 = new Player("player2");
@@ -56,7 +55,5 @@ public class ScoreBoardTest {
         assertTrue(printOutput.contains("player1\t\t[0]"));
         assertTrue(printOutput.contains("player2\t\t[0]"));
         assertTrue(printOutput.contains("==================================="));
-
-        verify(mockCollections).sort(scoreBoard.getPlayerList());
     }
 }
