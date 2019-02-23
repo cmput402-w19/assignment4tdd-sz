@@ -17,3 +17,4 @@
 * [https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito/1.7.3](https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito/1.7.3)
 * [https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4/1.7.4](https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4/1.7.4)
 * [https://stefanbirkner.github.io/system-rules/](https://stefanbirkner.github.io/system-rules/)
+* [https://github.com/powermock/powermock/issues/901](https://github.com/powermock/powermock/issues/901)
