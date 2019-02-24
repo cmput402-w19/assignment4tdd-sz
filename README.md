@@ -9,12 +9,18 @@
 4. Right click App.java(assignment4tdd-sz/src/main/java/assignment4/App.java)
 5. Click "Run 'App.main()'"
 
+# Description
+This is Assignment 4 for CMPUT 402.
+
 # How to play
 Please see [http://www.dr-mikes-math-games-for-kids.com/3x3-magic-square.html](http://www.dr-mikes-math-games-for-kids.com/3x3-magic-square.html)
 
 # Contribute List
 * Shuonan Pei
 * Zhimao Lin
+
+# Please email us for help
+You can contact us through our ualberta email.
 
 # References
 
