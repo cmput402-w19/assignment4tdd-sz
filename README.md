@@ -2,8 +2,19 @@
 [![Build Status](https://travis-ci.com/cmput402-w19/assignment4tdd-sz.svg?token=FssyMmBPRuAzV51Y1wPf&branch=master)](https://travis-ci.com/cmput402-w19/assignment4tdd-sz)
 [![codecov](https://codecov.io/gh/cmput402-w19/assignment4tdd-sz/branch/master/graph/badge.svg)](https://codecov.io/gh/cmput402-w19/assignment4tdd-sz)
 
+# Installation instruction
+1. Install JDK 11 on MacBook Pro with Retina Display from [https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+2. Install IntelliJ IDEA 2018.3.4 (Ultimate Edition) on a MacBook Pro with Retina Display
+3. Use IntelliJ IDEA open this project
+4. Right click App.java(assignment4tdd-sz/src/main/java/assignment4/App.java)
+5. Click "Run 'App.main()'"
+
 # How to play
 Please see [http://www.dr-mikes-math-games-for-kids.com/3x3-magic-square.html](http://www.dr-mikes-math-games-for-kids.com/3x3-magic-square.html)
+
+# Contribute List
+* Shuonan Pei
+* Zhimao Lin
 
 # References
 
