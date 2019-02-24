@@ -15,6 +15,7 @@ This is Assignment 4 for CMPUT 402.
 You need to enter integer numbers from 1 to 9 to a 3 by 3 grid. 
 Each number can be only used once. 
 You need to make the sum of each row and column and the two diagonal be 15. 
+<br>
 ![Play Rule](http://www.dr-mikes-math-games-for-kids.com/images/3x3-middle-is-5.png)
 
 # How to play
